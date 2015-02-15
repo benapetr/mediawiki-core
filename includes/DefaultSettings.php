@@ -4618,6 +4618,7 @@ $wgGroupPermissions['sysop']['editsemiprotected'] = true;
 $wgGroupPermissions['sysop']['ipblock-exempt'] = true;
 $wgGroupPermissions['sysop']['blockemail'] = true;
 $wgGroupPermissions['sysop']['markbotedits'] = true;
+$wgGroupPermissions['sysop']['marktooledits'] = true;
 $wgGroupPermissions['sysop']['apihighlimits'] = true;
 $wgGroupPermissions['sysop']['browsearchive'] = true;
 $wgGroupPermissions['sysop']['noratelimit'] = true;
@@ -6037,6 +6038,12 @@ $wgRecentChangesFlags = array(
 		'legend' => 'recentchanges-legend-bot',
 		'class' => 'botedit',
 	),
+        'tooledit' => array(
+                'letter' => 'tooleditletter',
+                'title' => 'recentchanges-label-tool',
+                'legend' => 'recentchanges-legend-tool',
+                'class' => 'tooledit',
+        ),
 	'unpatrolled' => array(
 		'letter' => 'unpatrolledletter',
 		'title' => 'recentchanges-label-unpatrolled',

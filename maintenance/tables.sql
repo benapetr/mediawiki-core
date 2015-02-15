@@ -1053,6 +1053,9 @@ CREATE TABLE /*_*/recentchanges (
   -- default view.
   rc_bot tinyint unsigned NOT NULL default 0,
 
+  -- Edits by users which were flagged as tool edit
+  rc_tool tinyint unsigned NOT NULL default 0,
+
   -- Set if this change corresponds to a page creation
   rc_new tinyint unsigned NOT NULL default 0,
 

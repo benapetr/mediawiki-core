@@ -136,6 +136,7 @@ class User implements IDBAccessObject {
 		'ipblock-exempt',
 		'managechangetags',
 		'markbotedits',
+                'marktooledits',
 		'mergehistory',
 		'minoredit',
 		'move',
